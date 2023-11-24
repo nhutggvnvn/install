@@ -1,6 +1,6 @@
 $(document).ready(function() { 
     $.ajax({ 
-        url: "https://api.github.com/repos/serdykee/serdykee.github.io/contents/cert", 
+        url: "https://api.github.com/repos/nhutgg/nhutgg.github.io/contents/cert", 
         dataType: "json", 
         success: function(data) {
             var reversedData = data.reverse(); // Sắp xếp danh sách theo thứ tự đảo ngược
