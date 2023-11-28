@@ -28,6 +28,23 @@
 
 
 <style>
+
+    /* Thêm các quy tắc CSS khác nếu bạn muốn đổi màu của các phần khác trên trang web của bạn */
+
+   @media only screen and (max-width: 767px) {
+    /* Ẩn thanh địa chỉ trên Safari dưới 767px */
+    .top-bar,bottom-bar {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    /* Ẩn thanh công cụ trên Safari dưới 1023px */
+    .safari-only {
+        display: none !important;
+    }
+}
+
   #userIP {
     text-align: center;
     margin-top: 20px;
@@ -87,7 +104,7 @@
     <br><b style="color:#ff3700">Xem hướng dẫn tại Youtube</b>
       <!-- Mã nhúng iframe để xem video YouTube -->
         
-        <iframe width="430" height="315" src="https://www.youtube.com/embed/COHb1bkBEkY?si=5z_JDgUNgRQ8Kknn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/COHb1bkBEkY?si=5z_JDgUNgRQ8Kknn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
            
             <!-- Mã nhúng iframe để xem video YouTube -->  
 </div>
