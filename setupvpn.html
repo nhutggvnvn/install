@@ -1,104 +1,145 @@
-<!doctype html>
-<html lang="en">
 
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
-    <meta property="og:title" content="DNS-over-HTTPS|Chat" />
-    <meta name="description" content="Cập Nhập & Chia sẽ Tips Tips !" />
-    <title>FILE CERT</title>
-    <link rel="stylesheet" href="./css/style1.css">  
-    <link rel="stylesheet" href="./css/loading.css">
-    <link rel="shortcut icon" href="./image/ggeditor.jpg" type="image/webp">
-    <link rel="icon" href="./image/ggeditor.png" type="image/webp">
-    <link rel="apple-touch-icon" sizes="180x180" href="./image/ggeditor.png">
-    <link data-srs="" rel="stylesheet" href="https://www.apple.com/wss/fonts?families=SF+Pro,v3:200,300,400,500,600|SF+Pro+Icons,v3|Apple+Monochrome+Emoji,v3|Apple+Monochrome+Emoji+Ind,v2|Graphik,v1">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>NhutGG SHARE VPN</title>
+<meta name="author" content="nhutgg">
+<meta name="description" content="VPN">
 
-<!----------------------------------------------------- ggeditor | SCRIPT ----------------------------------------------------->   
 
-<script src="./js/rainbow.js"></script>   <!-- Js chu rainbow -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    <!-- Js loading -->
- 
-<!------------------------------------------------------ ggeditor | STYLE ------------------------------------------------------>   
+<meta property="og:type" content="website">
+<meta property="og:title" content="FILE UPDATE VPN 4G">
+<meta property="og:description" content="VPN 4G">
 
-    <style></style>
+<link rel="stylesheet" href="./css/loading.css">
+<link rel="stylesheet" href="./css/gg2.css">
+<link rel="stylesheet" href="./css/gg3.css">
+
+<script src="./js/main.js"></script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="./js/jquery.min.js" ></script>
+
+
+<style>
+  #userIP {
+    text-align: center;
+    margin-top: 20px;
+}
+
+		body {
+			display: none;
+		}
+		/* CSS để căn giữa video */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px; /* Điều chỉnh chiều cao của video theo nhu cầu */
+        }
+        .video-container iframe {
+            max-width: 100%;
+            max-height: 100%;
+        }
+	</style>
 </head>
-
-
-<body>
-<!-- LOADING -->
-<script>
-    jQuery('body').append('<div id="loading"><div class="loader text-center"></div></div>');
-    jQuery(window).on('load', function(){
-    setTimeout(removeLoader, 300);
-    });
-    function removeLoader(){
-    jQuery( "#loading" ).fadeOut(500, function() {
-    jQuery( "#loading" ).remove();
-    });
-    }
-    </script>
-
-    <!-- Js chu porn -->
-   
-
-
-
-    <div class="ggeditor flex-h-center" id="background_div">
-        <img class="page-image" data-src="./image/rainy_night.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEyklEQVRYhXWW3ZobuQ1ED0DKEzs3eZu8/xs5ye6OpSZRuSD40/Ks/NE96m4ShUIVILOPf4tq8N3hR+Gf3ws/vlc+PgqPj8rjUSjVseKYGwCBiAhaD67WebXOr6vxx6vRrgZXg6tDD4gAExjgQDHcjYcbxcAxGw/3JT92/H1/dt4/v5gdb5odN7/cCUClAD42uIGb4bnP1nF2O0Lzntm+mmHmYJGbDdwHAxwHQu4bZ1SKMbgwqhvFLEHY8Y/1PwYukPFbcLcYQd3zpZmndhkG7ZksVKpDgVKMhzvVJohkI687ASNsnDeeO27CXbiXUWcXFHYptHVgGdhTEtUfjjt8Kz6EkSwUMwqDicWGGTLDZchEzMNyFQdzUEmK1BOALRYG4doMfFTHDR7FBwNuFHOKOW5HSWzIWOTZkNlv1otDKdBEBgf6BBCAKKZMENxE/VYGA7UMDVT3GwtuTsEwfIlrHKWkfjBSHLxA1QQwHdATsVEQxSJ1LwpG/VaHE0sxavHM/q0MtsWmtJewUXdpM5BArBhSBocNQGfw1EAtCcCNMrN3T3p90b9KsABAQYQLl20mygDSyuHbMFyDnZL7PFctZWRWygTwxkCWYZZAR5MZZQD3wJXi19BC02lDKNJ4JnAiXWDU4icDmcktex8uMANLBsyGCEn7yZf1PcBdmECaxRIltKznc69ELW7ZtI6ANyDJgCUDB4DAMIS5RnCbWhBFos3az16Blq3n+9UmAJtB35cvEX7JAIYTmG2xnqLluLf6iXZjq6vLGUdb/fulHC6rFUt7JpBz5K15+Rw3mt9td8Ipkh3kdyBnCTBfQ8pRZnLs5b7Q8d1mR16Thfo2g3dgfs+eBGHcZgtmQ2g2VS+tZSnC2zxaQI06pDqH7BdAzG/1XAAy4LiOhQIUWF5R/iCJfD5MfDQIUTW8kp1LM/oONsdXAsFsZYJpgVkZR6AIFB2ij78nGDaIWboa0qrnW+84gOzgCzzjt8emOzJgBu6d6H0DWsndS14jAnMbTA0YOfHmD5C7nVgZ7yazqe7QO2ptrD4ZEDL9/jPNoPaIYQ83it5YyPeUzlgHpLj4KnhvRLuI1qB3iBjT00CzU2mDqK3HaEBhRIhYDAwWtMpwamcDGatDNNQv1F6oXcTVoHWQBgA3KCXPLmOfGfXqHZcnA0HoAHHSsBhIP+Ub0j17XRfxeqHr2gDMiFIGbp8JjHFZXy0oRXgxaojIMgSTAXb7tQR08/tQvHqD9kLXk/56wvOVAIBSiEdFPpiQ+zqi/mqdKsOL81DQ3xhQ0j91sGyb44hUPf1K6p/Er0/4fMKrDdYeD4IPwh2VskonRH1dnUtOfQQ9ZglYOuB0xEmANMAcDOh6oucn/fMP+M9fcF1AhR/fCTdUC4o6XJFOqlwdIZ7d+UeWIHQyMEFMAbLqP0Ck/6cAn5/Ef3/C9b9t9r/+RXyr6OMxHJNWGxP1FXAFzy6agn4TYDp9NY57I4LZbtMF7UU8/4TXERyAn+jXc/QF3SVeefWhzAh6iBC7GTHtN+x4Tgwd7VcK1PsQ4edPvvosAMnAEiFN0MbAaFnXbTLubMxysK+rz6uj/kKf15cAYADY2hl3R1vq2g1jLXH27K8/ecoxC96G6vG5tvjWbvF/g9ExtZWdO2YAAAAASUVORK5CYII=" alt="background" />
-        <canvas id="bg-canvas" class="background-overlay"></canvas>
-        <div class="page-ggeditor relative ">
- 
-<!----------------------------------------------------- ggeditor | HEADER ----------------------------------------------------->
-
-   
-
-<!----------------------------------------------------- ggeditor | MAIN -----------------------------------------------------> 
-
-<div class="mt-24">
-    <div class="page-text-font page-text-color page-item-title-center mt-20 text-center"><span class="ggeditor--style1">DANH SÁCH CHỨNG CHỈ MIỄN PHÍ</span></div>
-
- 
-        <div id="file-list">
-          <br>
-           
-        </div>
-     
-            </div>
- 
-             
- 
-
-
-
-<!----------------------------------------------------- ggeditor | FOOTER ----------------------------------------------------->
-        <!-- ggeditor | Footer -->
-        <div class="footer text-center">
-            <a target="_blank" aria-label="ggeditor" rel="noopener nofollow" href="./index.html">
-                <img class="text-center" src="./image/nhutgg_footer.png" height="15%" width="15%" alt="ggeditor" /></a><br>
-            <div class="copyright"> Made with <i class="fa fa-heart heartbeat" data-ipstooltip="" title="ggeditor"></i> Cập Nhập & Chia sẽ Tips Tips !</div>
-         
-            
-  
-        </div>
-    </div>
+<body style="display: block;">
+<nav class="navbar navbar-vertical navbar-vertical-sm fixed-start navbar-expand-md navbar-light" id="sidebarSmall" style="display: none !important"></nav>
+<nav class="navbar navbar-expand-lg navbar-light" id="topnav" style="display: none;"></nav>
+<div class="main-content">
+<div class="header"></div>
+<div class="container-fluid">
+<div class="row" style="margin-bottom: 35px;">
+<div class="col-lg-12">
+<div class="anhdaidien">
 </div>
-        <!-- ggeditor | TopUp -->
- <div><button onclick="topFunction()" id="topup" title="Back to Top"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="20px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="false" class="sc-14pu1zv-1 fqjhlT"><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg></button></div>
+
+<div class="jzonProfileInfo">
+<div class="row">
+<div class="col">
+<div class="card">
+<p></p>
+<div class="card-header text-center">
+<h2 class="h2-vip" style="color: blue"><img src="./image/sharebygg.png" /> DNS-over-HTTPS|Chat </h2>
+</div>
+    <div class="code-container" style="border: 5px solid rgb(19, 133, 139); border-radius: 5px; padding: 10px; margin-bottom: 10px;">
+    <br><b style="color:#ff3700">Cloudflare Gateway + Cloudflare warp vpn ?</b>
+    <br>Mục đích : 
+    <br><b style="color:#007fff">+ Kết hợp này để có thể dùng warp vpn vừa để fake ip</b>
+    <br><b style="color:#007fff">+ Chặn thu hồi chứng chỉ IOS</b>
+    <br><b style="color:#007fff">+ Chặn quảng cáo</b>
+
+    <br>*Vào App VPN 1111<b style="color:#007fff">👉🏻Chọn login>Chọn Account zero trust</b>
+    <br><b style="color:#010101">sao chép bên dưới👇🏻</b>
+    <br>
+    <!-- Đoạn mã HTML để tạo nút Copy cho Key -->
+    <button type="button" class="btn btn-danger btn-rounded ripple-surface" style="box-shadow: none;margin-top: 15px;background: #0e0e0e;font-size: 1rem;width: 100%;color: rgb(24, 242, 89);font-weight: 500;border-radius: 5px;">
+        <code id="key1">nhutnguyenminhv2</code> 
+        <a onclick="copy('#key1')"><i class="fa fa-copy"></i></a>
+    </button>
+    
+    <br><b style="color:#ff3700">Xem hướng dẫn tại Youtube</b>
+      <!-- Mã nhúng iframe để xem video YouTube -->
         
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/COHb1bkBEkY?si=5z_JDgUNgRQ8Kknn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           
+            <!-- Mã nhúng iframe để xem video YouTube -->  
+</div>
 
+<!-- <div class="code-container" style="border: 5px solid rgb(19, 133, 139); border-radius: 5px; padding: 10px; margin-bottom: 10px;"></div>
 
+</div> -->
+   
+<!-- <br>Mặc định IOS chặn thông báo đến trên máy nên cần đổi điểm Viettel++ nếu muốn bật thông báo thì phải có data Soạn tin: DATA 100 gửi 9000 (100 điểm = 10Mb)<br>Liên Hệ: <a href="https://www.facebook.com/nhutgg.desinger?mibextid=9R9pXO" style="color:#007fff"><u>Nhựt GG</u></a> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
   
-</div> 
+  
+  <p id="userIP">Địa chỉ IP của bạn sẽ xuất hiện ở đây.</p>
 
+  
+<script src="./js/clipboard.min.js"></script>
 
+<script>
+  
+		function copy(element) {
+			var $temp = $("<input>");
+			$("body").append($temp);
+			$temp.val($(element).text()).select();
+			document.execCommand("copy");
+			swal('Thành Công','Copy Key '+$(element).text()+' Thành Công','success');
+			$temp.remove();
+		}
+  
+  // Đợi cho trang web được tải hoàn toàn
+window.addEventListener('load', () => {
+    // Lấy địa chỉ IP của người truy cập sử dụng một dịch vụ API miễn phí
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            // Lấy địa chỉ IP từ dữ liệu API và hiển thị nó
+            const userIP = data.ip;
+            document.getElementById('userIP').textContent = `Địa chỉ IP của bạn: ${userIP}`;
+        })
+        .catch(error => {
+            console.error('Lỗi khi lấy địa chỉ IP:', error);
+        });
+});
+
+	</script>
 </body>
-<!----------------------------------------------------- ggeditor | SCRIPT ----------------------------------------------------->
-<script src="./js/filelist.js"></script> <!-- Liên kết tệp script.js -->
-<script src="./js/topup.js"></script>
-<script src="./js/plausible.js"></script>
-<script src="./js/sexy.js" defer></script>
-<script src="./js/raindrops.js"></script>
-
 </html>
