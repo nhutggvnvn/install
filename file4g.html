@@ -96,7 +96,24 @@
         <br><b style="color:#010101"></b>🟢Liên Quân là: dl.ops.kgvn.garenanow.com</b>
         <br><b style="color:#010101"></b>🟢Tiktok là: v9.tiktokcdn.com</b>
         <br><b style="color:#010101"></b>TỐC ĐỘ PHỤ THUỘC VÀO VÙNG CỦA BẠN !</b>
+        <br><b style="color:#010101">sao chép các sni nếu bạn cần thay đổi👇🏻</b>
+<!-- Thêm button và code cho dl.aw.freefiremobile.com -->
+<button type="button" class="btn btn-danger btn-rounded ripple-surface" style="box-shadow: none;margin-top: 15px;background: #0e0e0e;font-size: 1rem;width: 100%;color: rgb(24, 242, 89);font-weight: 500;border-radius: 5px;">
+    <code id="freefireCode">dl.aw.freefiremobile.com</code> 
+    <a onclick="copy('#freefireCode')"><i class="fa fa-copy"></i></a>
+</button>
 
+<!-- Thêm button và code cho dl.ops.kgvn.garenanow.com -->
+<button type="button" class="btn btn-danger btn-rounded ripple-surface" style="box-shadow: none;margin-top: 15px;background: #0e0e0e;font-size: 1rem;width: 100%;color: rgb(24, 242, 89);font-weight: 500;border-radius: 5px;">
+    <code id="lienquanCode">dl.ops.kgvn.garenanow.com</code> 
+    <a onclick="copy('#lienquanCode')"><i class="fa fa-copy"></i></a>
+</button>
+
+<!-- Thêm button và code cho v9.tiktokcdn.com -->
+<button type="button" class="btn btn-danger btn-rounded ripple-surface" style="box-shadow: none;margin-top: 15px;background: #0e0e0e;font-size: 1rem;width: 100%;color: rgb(24, 242, 89);font-weight: 500;border-radius: 5px;">
+    <code id="tiktokCode">v9.tiktokcdn.com</code> 
+    <a onclick="copy('#tiktokCode')"><i class="fa fa-copy"></i></a>
+</button>
 
     <!-- Đoạn mã HTML để tạo nút Copy cho Key -->
     <br><b style="color:#010101">sao chép bên dưới👇🏻</b>
@@ -149,7 +166,7 @@
 			$("body").append($temp);
 			$temp.val($(element).text()).select();
 			document.execCommand("copy");
-			swal('Thành Công','Copy Key '+$(element).text()+' Thành Công','success');
+			swal('Thành Công','Copy '+$(element).text()+' Thành Công','success');
 			$temp.remove();
 		}
   
